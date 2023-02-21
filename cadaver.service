@@ -1,0 +1,15 @@
+[Unit]
+Description=Cadaver Bot Service
+
+[Service]
+Type=simple
+User=deploy
+Group=deploy
+WorkingDirectory=/home/deploy/Cadaver/current/src
+ExecStart=/bin/bash -lc "bundler exec ruby cadaver.rb"
+TimeoutSec=30
+Restart=always
+RestartSec=30s
+
+[Install]
+WantedBy=multi-user.target
