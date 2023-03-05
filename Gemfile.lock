@@ -15,11 +15,6 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.4.2)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 1.6, < 2)
-      minitest (>= 5.1)
-      tzinfo (~> 2.0)
     airbrussh (1.4.1)
       sshkit (>= 1.6.1, != 1.7.0)
     ast (2.4.2)
@@ -42,12 +37,10 @@ GEM
       domain_name (~> 0.5)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
-    iso8601 (0.13.0)
     json (2.6.3)
     mime-types (3.4.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2023.0218.1)
-    minitest (5.17.0)
     net-scp (4.0.0)
       net-ssh (>= 2.6.5, < 8.0.0)
     net-ssh (7.0.1)
@@ -78,10 +71,6 @@ GEM
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.26.0)
       parser (>= 3.2.1.0)
-    ruby-duration (3.2.3)
-      activesupport (>= 3.0.0)
-      i18n
-      iso8601
     ruby-progressbar (1.11.0)
     rvm1-capistrano3 (1.4.0)
       capistrano (~> 3.0)
@@ -89,8 +78,6 @@ GEM
     sshkit (1.21.4)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
-    tzinfo (2.0.6)
-      concurrent-ruby (~> 1.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
@@ -113,7 +100,6 @@ DEPENDENCIES
   discordrb!
   ed25519 (>= 1.2, < 2.0)
   rubocop
-  ruby-duration (~> 3.2, >= 3.2.3)
   rvm1-capistrano3
 
 RUBY VERSION

@@ -5,7 +5,6 @@ ruby '2.7.3'
 
 gem 'concurrent-ruby', :require => 'concurrent'                           # Modern concurrency tools
 gem 'discordrb', :github => 'shardlab/discordrb', :branch => 'main'       # Discord API for Ruby
-gem 'ruby-duration', '~> 3.2', '>= 3.2.3'                                 # Immutable Duration type
 
 group :development do
   gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'                                   # Resolve OpenSSH problems with capistrano
