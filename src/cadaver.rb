@@ -21,11 +21,11 @@ module Bot
   # Re-Volt...
   #
 
-  @next = Duration.new(:seconds => 5)
-  rv_task = Concurrent::TimerTask.new(:execution_interval => @next.seconds) do |task|
+  @next = Duration.new(:days => 7)
+  rv_task = Concurrent::TimerTask.new(:execution_interval => @next.days * Common::SECONDS_IN_DAY) do |task|
     @bot.send_message(Common::CONFIG[:channel], Common::CONFIG[:message])
 
-    @next = Duration.new(:days => rand(2..7))
+    @next = Duration.new(:days => rand(7..14))
     task.execution_interval = @next.days * Common::SECONDS_IN_DAY
   end
 
